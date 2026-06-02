@@ -1,0 +1,48 @@
+name: 'Claude Changelog Action'
+description: 'Automatically generate CHANGELOG.md updates and release notes from PR descriptions and commit history using Claude AI.'
+author: 'Ian Griggs (icgriggs14)'
+
+branding:
+  icon: 'book-open'
+  color: 'orange'
+
+inputs:
+  anthropic_api_key:
+    description: 'Anthropic API key (store as a GitHub secret)'
+    required: true
+  changelog_file:
+    description: 'Path to the CHANGELOG.md file to update'
+    required: false
+    default: 'CHANGELOG.md'
+  release_tag:
+    description: 'Release tag or version (e.g. v1.2.0). Defaults to the triggering tag or latest semver bump.'
+    required: false
+    default: ''
+  style:
+    description: 'Changelog format style: keepachangelog | conventional | simple'
+    required: false
+    default: 'keepachangelog'
+  model:
+    description: 'Claude model to use (defaults to Haiku for speed/cost)'
+    required: false
+    default: 'claude-haiku-4-5-20251001'
+  max_commits:
+    description: 'Max number of recent commits to include in context (default: 50)'
+    required: false
+    default: '50'
+  commit_range:
+    description: 'Git commit range to include (e.g. v1.0.0..HEAD). Auto-detected if blank.'
+    required: false
+    default: ''
+
+outputs:
+  changelog_entry:
+    description: 'The generated changelog entry text'
+  version:
+    description: 'The version string used in the changelog entry'
+  release_notes:
+    description: 'Condensed release notes suitable for a GitHub Release body'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
