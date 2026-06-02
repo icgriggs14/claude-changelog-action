@@ -145,3 +145,16 @@ If this saves you time, consider [sponsoring on GitHub Sponsors](https://github.
 ## License
 
 MIT © [Ian Griggs](https://github.com/icgriggs14)
+
+
+## Other Claude AI Tools
+
+These companion tools from the same author work great together:
+
+- **[claude-pr-review](https://github.com/icgriggs14/claude-pr-review)** — AI-powered PR code review using Claude
+- **[claude-test-writer](https://github.com/icgriggs14/claude-test-writer)** — AI unit test generation CLI + GitHub Action
+- **[react-doctor-action](https://github.com/icgriggs14/react-doctor-action)** — CI health checks for React projects
+- **[knip-action](https://github.com/icgriggs14/knip-action)** — CI enforcement for knip unused-exports detection
+- **[secretlint-action](https://github.com/icgriggs14/secretlint-action)** — CI credential leak detection using secretlint
+
+[Sponsor this work on GitHub Sponsors](https://github.com/sponsors/icgriggs14)
