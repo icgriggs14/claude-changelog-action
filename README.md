@@ -122,9 +122,17 @@ Claude Haiku (the default model) costs ~$0.0002 per changelog generation — ess
 
 ---
 
-## From the same account
+## Related tools
+
+Part of the **claude autonomous-rail suite** — AI-powered developer tools that run entirely in GitHub Actions:
 
 - [**claude-pr-review**](https://github.com/icgriggs14/claude-pr-review) — AI code review on every PR
+- [**claude-test-writer**](https://github.com/icgriggs14/claude-test-writer) — Auto-generate unit tests for every PR
+- **claude-changelog-action** — Auto-generate changelogs & release notes (this repo)
+
+**npm CLI companions** (coming soon to npm):
+- `npx claude-pr-review` — run PR review from the command line
+- `npx claude-commit` — AI-powered conventional commit messages
 
 ---
 
