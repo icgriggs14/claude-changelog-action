@@ -1,4 +1,5 @@
 # claude-changelog-action
+[![GitHub Stars](https://img.shields.io/github/stars/icgriggs14/claude-changelog-action?style=social)](https://github.com/icgriggs14/claude-changelog-action)
 
 > **AI-powered CHANGELOG.md updates and release notes using Claude.**
 > Reads your PR descriptions and commit history → generates a structured changelog entry automatically on every merge or tag.
